@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Crew</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Blue Crew</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Catalog</a>
+                <a href="upload.html" class="nav-link">Add Video</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="search-section">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search videos...">
+            </div>
+            
+            <div class="catalog-grid" id="catalogGrid">
+                <div class="loading">Loading videos...</div>
+            </div>
+        </div>
+    </main>
+
+    <button class="fab" id="addVideoFab" title="Add Video">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

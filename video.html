@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - Film Catalog</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="back-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 19-7-7 7-7"></path>
+                    <path d="m19 12H5"></path>
+                </svg>
+                Back to Catalog
+            </a>
+        </div>
+    </header>
+
+    <main class="main video-main">
+        <div class="container">
+            <div class="video-container">
+                <div class="video-player" id="videoPlayer">
+                    <div class="loading">Loading video...</div>
+                </div>
+                
+                <div class="video-info">
+                    <!-- Added folder display above title -->
+                    <div class="video-folder" id="videoFolder" style="display: none;"></div>
+                    <h1 class="video-title" id="videoTitle">Video Title</h1>
+                    <p class="video-description" id="videoDescription">Video description</p>
+                    <!-- Added video metadata display -->
+                    <div class="video-meta" id="videoMeta">
+                        <div class="video-meta-item">
+                            <span id="videoDate">Date added</span>
+                        </div>
+                        <div class="video-meta-item">
+                            <span id="videoSource">Source</span>
+                        </div>
+                    </div>
+                    <!-- Added external link button -->
+                    <div style="margin-top: 1rem;">
+                        <a href="#" id="externalLink" class="external-link" style="display: none;" target="_blank">
+                            View Original
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/video.js"></script>
+</body>
+</html>
